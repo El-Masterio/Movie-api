@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="position-fixed w-100 h-100 loading-animation">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- Side NavBar -->
+    <div class="side-navbar d-flex position-fixed min-vh-100">
+      <div
+        class="nav-container bg-dark d-flex flex-column justify-content-between p-3 min-vh-100"
+      >
+        <ul class="nav-links list-unstyled text-white">
+          <li><a class="nav-link" id="now_playing">Now playing</a></li>
+          <li><a class="nav-link" id="popular">Popular</a></li>
+          <li><a class="nav-link" id="top_rated">Top Rated</a></li>
+          <li><a class="nav-link" id="trending">Trending</a></li>
+          <li><a class="nav-link" id="upcoming">Upcoming</a></li>
+          <li><a>contact us</a></li>
+        </ul>
+        <div class="nav-footer text-white">
+          <div class="nav-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="footer">
+            <p>Copyright A&copy; 2019 All Rights <br />Reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="nav-header d-flex justify-content-between bg-white px-3 py-4 flex-column text-center"
+      >
+        <img class="logo" src="images/logo.png" alt="Logo of the website" />
+
+        <div class="open-navbar">
+          <i class="fa-solid fa-bars icon-open fa-2x pointer"></i>
+        </div>
+
+        <div class="d-flex flex-column">
+          <i class="fa-solid fa-globe mb-2"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- website Content Container -->
+    <section id="content">
+      <div class="contentParent px-3 pt-5">
+        <div class="container">
+          <!-- /////////  Search Bar //////////// -->
+          <div>
+            <input
+              id="searchBar"
+              class="searchBar w-50 mx-auto bg-transparent rounded-pill text-white form-control shadow-none border-white px-3"
+              type="search"
+              placeholder="Search"
+            />
+          </div>
+          <div class="row p-4 gy-3"></div>
+          <!-- Contact Us section -->
+          <!-- TODO: finish the style for contact page -->
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <form id="form">
+        <div class="container">
+          <h2 class="text-light">Contact US</h2>
+
+          <div class="row">
+            <div class="col-md-6">
+              <input
+                id="nameInput"
+                class="form-control"
+                type="text"
+                placeholder="Enter Your name"
+              />
+              <div
+                id="nameAlert"
+                class="alert alert-danger mt-2 d-none"
+                role="alert"
+              >
+                required
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <input
+                id="emailInput"
+                class="form-control w-100"
+                type="Email"
+                placeholder="Enter Your Email"
+              />
+              <div
+                id="emailAlert"
+                class="alert alert-danger mt-2 d-none"
+                role="alert"
+              >
+                Enter valid Email , example: yy@xx.com
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <input
+                id="phoneInput"
+                class="form-control"
+                type="text"
+                placeholder="Enter your Phone"
+              />
+              <div
+                id="phoneAlert"
+                class="alert alert-danger mt-2 d-none"
+                role="alert"
+              >
+                Enter valid Phone Number
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input
+                id="ageInput"
+                class="form-control"
+                type="text"
+                placeholder="Enter your Age"
+              />
+              <div
+                id="ageAlert"
+                class="alert alert-danger mt-2 d-none"
+                role="alert"
+              >
+                must be + 16
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input
+                id="passInput"
+                class="form-control"
+                type="password"
+                placeholder="Enter your Password"
+              />
+              <div
+                id="passAlert"
+                class="alert alert-danger mt-2 d-none"
+                role="alert"
+              >
+                only letters and numbers minimum 8
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input
+                id="repassInput"
+                class="form-control"
+                type="password"
+                placeholder="ReEnter Password"
+              />
+              <div
+                id="repassAlert"
+                class="alert alert-danger mt-2 d-none"
+                role="alert"
+              >
+                password do not match
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-danger m-4 submitForm disabled">submit</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Scroll Up div -->
+    <div
+      class="btn-up position-fixed bg-info rounded-circle c-pointer text-center"
+    >
+      <i class="fa-solid fa-arrow-up text-white"></i>
+    </div>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
